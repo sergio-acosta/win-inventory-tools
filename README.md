@@ -1,5 +1,5 @@
 # win-inventory-tools
-Windows scripts to generate reports from Windows (remote or local) workstations. It is intended to aid in the inventory of physical IT related equipment. It is strongly recommended using the Power Shell ones below instead of the VBS, as they're the most *up to date*.
+Windows scripts to generate reports from Windows workstations. It is intended to aid in the inventory of physical IT related equipment. It is strongly recommended using the Power Shell ones below instead of the VBS, as they're the most *up to date*.
 
 ## VBS scripts
 
@@ -8,7 +8,7 @@ Windows scripts to generate reports from Windows (remote or local) workstations.
 `informe.vbs`: Generates a HTML-formatted file with a table showing all the running processes & PIDs in the system. 
 
 ## Power Shell scripts
-*This* are the ones you should use
+*These* are the ones you should use (Windows 10 and above)
 
 `pInven.ps1`: Behavior similar to the previous script, only with different columns and adapted to the current times. 
 
