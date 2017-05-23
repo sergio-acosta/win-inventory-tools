@@ -161,7 +161,7 @@ End Function
 'Remove domain from username if existes
 Function RemoveDomain(userName)
 	name = Split(Username,"\")
-	RemoveDomain = Ucase(name(1)) 'Andrei likes uppercase
+	RemoveDomain = Ucase(name(1)) 'Convert domain to uppercase
 End Function
 
 'Simply registry read function
