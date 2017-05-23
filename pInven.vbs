@@ -43,10 +43,10 @@ sLogFile = strComputer & ".csv"
 
 set oLogObject = CreateObject("Scripting.FileSystemObject")
 
-'Add a new line to CSV
+'Add a new line to CSV (only if it exists)
 If oLogObject.FileExists(sLogFile) Then
 	set oLogOutput = oLogObject.OpenTextFile (sLogFile, 8, True)
-Else
+Else 'Create column titles on a new CSV file
 	set oLogOutput = oLogObject.CreateTextFile(sLogFile)
 		oLogOutput.WriteLine "ASSET,ASSET TYPE,PURCHASE DATE,COMPANY,SITE,DEPARTMENT,COMPUTER NAME, USER, PRODUCT ID, SERIAL,BRAND,MODEL,MEMORY,PROCESSOR,OS"
 End If
@@ -121,15 +121,6 @@ Next
 oLogOutput.Close
 
 
-'Dim FSO 
-'Set FSO = CreateObject("Scripting.FileSystemObject")
-'strFile = ""
-'strRename = ""
-'If FSO.FileExists(strFile) Then
-	'FSO.MoveFile strFile, strRename
-'End If
-
-'
 Msgbox "Finished."
 wscript.quit (0)
 
@@ -158,7 +149,7 @@ End Select
 ConvertSize = Size & Suffix 
 End Function
 
-'Remove domain from username if existes
+'Remove domain from username if exists
 Function RemoveDomain(userName)
 	name = Split(Username,"\")
 	RemoveDomain = Ucase(name(1)) 'Convert domain to uppercase
