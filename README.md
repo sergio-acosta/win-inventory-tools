@@ -12,3 +12,5 @@ Windows scripts to generate reports from Windows workstations. It is intended to
 
 `pInven.ps1`: Behavior similar to the previous script, only with different columns and adapted to the current times. 
 
+`report.ps1`: Work in progress, but should behave as its VBS counterpart.
+
