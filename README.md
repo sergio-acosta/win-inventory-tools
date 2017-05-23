@@ -14,3 +14,7 @@ Windows scripts to generate reports from Windows workstations. It is intended to
 
 `report.ps1`: Work in progress, but should behave as its VBS counterpart.
 
+## Help
+
+In progress.
+Will be updated soon
