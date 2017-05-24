@@ -1,21 +1,21 @@
 #requires -version 2
 <#
 .SYNOPSIS
-  <Overview of script>
+  This script generates a CSV file with asset information. 
 .DESCRIPTION
-  <Brief description of script>
-.PARAMETER <Parameter_Name>
-    <Brief description of parameter input required. Repeat this attribute if required>
+  The script will create a .CSV file about the local computer or a remote computer if its hostname is provided as argument (see below)
+.PARAMETER <hostname>
+  If provided, generates the report about a remote computer.
 .INPUTS
-  <Inputs if any, otherwise state None>
+  None
 .OUTPUTS
-  <Outputs if any, otherwise state None - example: Log file stored in C:\Windows\Temp\<name>.log>
+  Comma-separated file <hostname>.csv 
 .NOTES
   Version:        1.0
-  Author:         <Name>
-  Creation Date:  <Date>
-  Purpose/Change: Initial script development
+  Author:         Sergio Acosta
+  Creation Date:  17/01/2016
+  Purpose/Change: -
   
 .EXAMPLE
-  <Example goes here. Repeat this attribute for more than one example>
+  csvInventory.ps1 localhost
 #>
